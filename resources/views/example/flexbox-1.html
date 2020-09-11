@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 1</title>
+    <style>
+        *{
+            background: orange;
+        }
+            .child-flex{
+                background-color: white;;
+                border: 1px solid;
+                flex-basis: 100px;
+                /* width: 100px;
+                height: 100px; */
+            }
+            .flex-content{
+                display: flex;
+                flex-direction: row;
+                /* justify-content: space-around; */
+                /* align-items: center; */
+                /* align-content: space-around; */
+                height: 400px;
+                width: 400px;
+                border: 1px solid;
+                /* flex-wrap: wrap; */
+                /* flex-direction: column-reverse; */
+            }
+            
+            #satu{
+                /* order: 1; */
+                /* flex-grow: 0; */
+                /* flex-shrink: 2; */
+            }
+
+            #dua{
+                /* order: 1; */
+                /* flex-grow: 0; */
+                /* flex-shrink: 2; */
+            }
+
+            #tiga{
+                /* order: 1; */
+                /* flex-grow: 0; */
+                /* flex-shrink: 1; */
+            }
+
+            #empat{
+                /* order: 1; */
+                /* flex-grow: 0; */
+                /* flex-shrink: 1; */
+            }
+            
+    </style>
+</head>
+<body>
+    <div class='flex-content'>
+        <div class="child-flex" id='satu'>Satu</div>
+        <div class="child-flex" id="dua">Dua</div>
+        <div class="child-flex" id="tiga">Tiga</div>
+        <div class="child-flex" id="empat">Empat</div>
+    </div>
+</body>
+</html>
