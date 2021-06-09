@@ -56,10 +56,8 @@ $(document).ready(function(){
 
 // Project Now Btn
 $( ".project-btn" ).on( "click", function() {
-    $(".c_1").css({"animation-name" : "project_now","animation-delay":"0s"});
-});
-
-$(this).scrollTop(0);
+    window.location.href='{{ url('/portofolio') }}';
+}); 
 
 setInterval(function(){
     if($(window).width() > 1000){ $("#list-btn-r").hide(); }
@@ -93,12 +91,12 @@ var granimInstance = new Granim({
                     { color: '#517894', pos: .9 },
                     { color: '#4e919a', pos: 1 }
                 ], [
-                    { color: '#4e919a', pos: .2 },
-                    { color: '#517894', pos: .7 },
-                    { color: '#585a8d', pos: .75 }
+                    { color: '#585a8d', pos: .2 },
+                    { color: '#517894', pos: .3 },
+                    { color: '#4e919a', pos: .85 }
                 ]
             ],
-            transitionSpeed: 3500
+            transitionSpeed: 4000
         }
     }
 });

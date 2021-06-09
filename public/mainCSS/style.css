@@ -1,0 +1,791 @@
+
+*{
+    font-family: 'Red Hat Text', sans-serif;
+    margin: 0px; padding: 0px;
+}
+body , html{
+    width: 100%;
+    font-size: 15px;
+}
+
+/* Container Portofolio */
+.container_slider{
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+.description_content{
+    width: 65%;
+    z-index: 1;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+.description_content p{
+    font-weight: 900;
+    font-size: 1.5em;
+    line-height: 40px;
+    color: #FFFFFF;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    text-shadow: 0px 8px 10px #000000;
+}
+.description_content span{
+    font-weight: 900;
+    font-size: 1.8em;
+    line-height: 40px;
+    color: #FFFFFF;
+    text-shadow: 0px 8px 10px #000000;
+}
+.img_project img{
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+.img_project img:hover {
+    opacity: 0.7;
+}
+
+.img_project{
+    display: flex;
+    justify-content: center;
+}
+.c_1{
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-name: project_now;
+}
+
+.project_now_2{
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-name: project_now_slide;
+    animation-play-state:paused;
+}
+
+.column_info_2 img{
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 3px 16px black;
+}
+
+.title_project{
+    font-size: 2.4em;
+    font-weight: 900;
+    line-height: 86px;
+    color: #FFFFFF;
+    text-shadow: 0px 8px 10px #000000;
+}
+
+.desc_project{
+    font-size: 1.3em;
+    line-height: 31px;
+    color: #FFFFFF;
+    text-shadow: 0px 8px 10px #000000;
+    text-align: justify;
+    height: 250px;
+}
+
+.project_now_2{
+    display: flex;
+    width: 97%;
+    margin: auto;
+    margin-top: -457px;
+    position: relative;
+    left: 100%;
+}
+
+.column_info_1{
+    width: 49%;
+    margin: 1%;
+}
+
+.column_info_2{
+    margin: 1%;
+    width: 49%;
+    cursor: pointer;
+}
+@keyframes project_now{
+    from{ 
+        left: 0%;
+        opacity: 1;
+    }
+    to{ 
+        left: -40%;
+     }
+}
+
+/* Come */
+@keyframes project_now_slide{
+    from{ 
+        left: 100%;
+        opacity: 0;
+        transform: rotate(10deg);
+    }
+    to{ 
+        left: 0%;
+        opacity : 1;
+        transform: rotate(0deg);
+     }
+}
+
+/* Back */
+@keyframes back_project_now_slide{
+    from{ 
+        left: 0%;
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    to{ 
+        left: 100%;
+        opacity : 0;
+        transform: rotate(10deg);
+     }
+}
+
+@keyframes back_project_now{
+    from{ 
+        left: -40%;
+        opacity: 0;
+    }
+    to{ 
+        left: 0%;
+        opacity: 1;
+     }
+}
+
+
+@keyframes name-index{
+    from{ 
+        left: 40%;
+      
+    }
+    to{ 
+        left: 0%;
+        opacity: 1;
+     }
+}
+
+
+.container_slider{
+    width: 97%;
+    height: 650px;
+    margin: auto;
+    margin-top:535px;
+    /* margin-top: 110%; */
+    background: rgba(0,0,0,0.5);
+    border: 1px solid rgba(0,0,0,0.3);
+    animation-fill-mode: both;
+    animation-name: slide_top;
+    animation-duration: 1s;
+    animation-delay: 2s;
+}
+
+.content_body_portofolio{
+    width: 100%;
+    height: 760px;
+    background-image: url(/portofolioAssets/photo123.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.opacity_portofolio{
+    background: #0C122E;
+    opacity: 0.30;
+    width: 100%;
+    height: 760px;
+    position: absolute;
+}
+
+/* Animation Keyframe Portofolio Page */
+
+@keyframes slide_top{
+    from{
+        /* margin-top: 36%; */
+        margin-top: 650px;
+         }
+    to{ 
+         margin-top: 0px;
+     }
+}
+
+
+/* Home Page CSS */
+.photo-profile{
+    width: 210px;
+    margin: auto;
+    padding-top: 25px;
+    position: relative;
+    animation-name: name-index;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+.oval-border{
+    width: 195px;
+    height: 190px;
+    border-radius: 50%;
+    background: #ffff;
+    box-shadow: 0px 0px 20px #000000;
+}
+.photos img{
+    width: 176px;
+    height: 171px;
+    margin: 9px;
+}
+.header{
+    width: 100%;
+    height: 120px;
+    background: #F3F3F3;
+}
+
+.group-header{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content-body{
+    width: 100%;
+    height: 500px;
+    background-image: url(/portofolioAssets/photo123.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.content-description{
+    width: 100%;
+    background: #F3F3F3;
+    box-sizing: border-box;
+    height: 300px;
+    border-top: 5px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    width: 100%;
+    background:#FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 280px;
+    overflow: hidden;
+}
+#list-btn{
+    width: 90%;
+    margin: auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    animation-name: bar;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    margin-top: -100px;
+    align-items: center;
+} 
+.list-menu-group{
+    width: 800px;
+    text-align: center;
+}
+.col-head-list, .col-footer-list{
+    display: flex;
+    justify-content: space-around;
+}
+.group-medsos{
+    width: 500px;
+    height: 130px;
+}
+#submit-sch{
+    padding: 6px 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+#search-txt{
+    padding: 6px;
+    font-size: 17px;
+    border: none;
+}
+.logo-medsos{
+    height: 130px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-medsos img{
+    height: 80px;
+    cursor: pointer;
+}
+
+.logo-medsos img:nth-child(4){
+    margin-left: -25px;
+}
+.col-head-list a{
+    flex-grow: 1;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6em;
+    line-height: 32px;
+    text-decoration-line: underline;
+    /* color: #FFFFFF; */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+}
+.col-footer-list a{
+    flex-grow: 1;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6em;
+    line-height: 32px;
+    text-decoration-line: underline;
+    /* color: #FFFFFF; */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 35px;
+    text-decoration: none;
+}
+.group-footer{
+    margin: auto;
+    height: 230px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 95%;
+}
+.animation-footer{
+    animation-name: footer-animation;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: 0.5;
+}
+.msg-love{
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-fajrin img{
+    width: 120px;
+}
+.logo-fajrin {
+    display: flex;
+    align-items: center;
+    height: 125px;
+    /* margin-top: 12px; */
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+}
+.msg-wife{
+    letter-spacing: 1px;
+    font-style: normal;
+    font-size: 0.8em;
+    text-align: center;
+    font-weight: 600;
+    color: black;
+}
+.name-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 115px;
+    position: relative;
+    animation-name: name-index;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+.name-index{
+    font-weight: 900;
+    font-size: 1.6em;
+    line-height: 86px;
+    color: #FFFFFF;
+    text-shadow: 0px 8px 10px #000000;
+}
+
+.bar a{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.7em;
+    line-height: 48px;
+    color: #000000;
+    text-shadow: 0px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+.bar a:hover{
+    transition: 1s;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.welcomes{
+    background: #1BB19B;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 10px 0px;
+    font-size: 0.9em;
+    width: 55%;
+    height: 40px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    padding-top: 7px;
+
+    animation-name: welcome; 
+    animation-duration: 3s;
+}
+
+.project-now{
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation-name: name-index;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+.group-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+.group-content-desc{
+    width: 65%;
+    padding: 15px;
+}
+
+.text-desc{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 47px;
+    text-align: center;
+    color:black;
+}
+.col-2 img {
+    width: 25px;
+    margin-left: 12px;
+}
+.col-1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.4em;
+    line-height: 48px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.back_slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+.project-btn{
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    border: 3px solid #ffff;
+    cursor: pointer;
+}
+.project-btn:hover{
+    transition: 1.5s;
+    background: honeydew;
+}
+.opacity{
+    /* background: #0C122E; */
+    opacity: 0.8;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+}
+.jobs-info{
+    height: 30px;
+    font-style: normal;
+    font-size: 1.5em;
+    color: #ffff;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-shadow: 0px 8px 10px #000000;
+    animation-name: name-index;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.btn-suggestion{
+    width: 120px;
+    height: 30px;
+    padding-top: 5px;
+    text-align: center;
+    background: #7252CE;
+    color: #FFFFFF;
+    border-radius: 0px 0px 0px 5px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.btn-suggestion:hover{
+    background: #23037c;
+    transition: 1s;
+}
+
+.searching-container form{
+    margin-top: 2px;
+}
+
+.check-btn{
+    font-size: 30px;
+    color:black;
+    cursor: pointer;
+}
+.menu-res{
+    display: flex;
+    justify-content: flex-end;
+    height: 90px;
+    align-items: center;
+}
+
+#check{
+    display:none;
+}
+
+.logo-medsos img:hover{
+    transform: rotate(360deg);
+    transition: transform 0.4s;
+}
+
+/* animation */
+@keyframes welcome{
+    from{ margin-left: -600px; }
+    to{ margin-left: 0px;  }
+}
+@keyframes bar{
+    from{ margin-top: -100px !important; }
+    to{ margin-top: 0px;  }
+}
+
+@keyframes footer-animation{
+    from{
+         position: relative;
+         left: 100%;
+         }
+    to{ 
+         position: relative;
+         left: 0%;
+     }
+}
+
+/* media queries */
+ @media (max-width: 575.98px) {
+    body{
+        font-size: 11px;
+        min-width: 370px;
+    }
+    .logo-fajrin img {
+        width: 90px;
+    }
+    .welcomes{
+        visibility: hidden;
+    }
+    .content-description{
+        height: auto;
+    }
+    .bar{
+        display:none;
+    }
+    .group-footer {
+        flex-wrap: wrap;    
+        width: 90%;
+        height: 420px;
+    }
+    .footer{
+        height: 460px;
+    }
+    .name-index{
+        font-size: 1.3em;
+    }
+    .jobs-info{  font-size: 1.3em; font-weight: 600; }
+    .group-medsos{
+        width: 350px;      
+    height: 80px;
+    }
+    .logo-medsos img {
+        height: 40px;
+    }
+    .logo-medsos{
+        height: 80px;
+    }
+    .group-content-desc {
+        width: 90%;
+        padding: 15px;
+    }
+    .text-desc{
+        line-height: 40px;
+    }
+    .btn-suggestion{
+        font-size: 1.5em;
+    }
+
+    /* Portofolio Page*/
+    .container_slider{
+        flex-wrap: wrap !important;
+    }
+
+    .description_content{
+        width: 100%;
+    }
+
+}
+
+ @media (min-width: 1200px) and (max-width: 1500px) {
+    .group-footer {
+        flex-wrap: wrap;    
+        width: 90%;
+        height: 400px;
+    }
+    .footer{
+        height: 450px;
+    }
+    .group-medsos{
+        width: 100%;
+    }
+    
+ }
+ @media (max-width: 1000px){ 
+    .bar{
+        display: none;
+    }
+    .group-header-bar{
+    width: 95%;
+    margin: auto;
+    }
+    #list-btn-r{
+        background: #F3F3F3;
+        z-index: 1;
+        border-top: 1px solid #d0d0d0;
+        display: none;
+        overflow: hidden;
+    }
+    .searching-container{
+        width: 100%;
+        padding:25px;
+    }
+    .list-r a{
+        display: block;
+        color: black;
+        font-size: 2em;
+        text-decoration: none;
+        padding: 25px;
+    }
+}
+@media (min-width: 1000px){
+    #list-btn-r{
+        display: none;
+    }
+    .menu-res{
+        display: none;
+    }
+}
+ @media (min-width: 575.98px) and (max-width: 767.98px) { 
+    .logo-medsos img {
+        height: 60px;
+    }
+    .group-medsos{
+        height: 125px;
+        width: 100%;
+    }
+    
+    .group-footer {
+        width: 80%;
+        flex-wrap: wrap; 
+        height: 500px; 
+    }
+    .footer{
+        height:550px;
+    }
+    .content-description{
+        height: auto;
+    }
+    body{
+        font-size: 13px;
+    }
+    .welcomes{
+        visibility: hidden;
+    }
+    .group-header{
+        /* visibility: hidden; */
+    }
+    .bar{
+        visibility: hidden;
+    }
+
+    /* Portofolio Page*/
+    .container_slider{
+        flex-wrap: wrap !important;
+    }
+
+    .description_content{
+        width: 100%;
+    }
+ }
+
+ @media (min-width: 767.98px) and (max-width: 1200px) {
+    body{
+        font-size: 12.5px;
+    }
+    .content-description{
+        height: auto;
+    }
+    .logo-medsos img {
+        height: 60px;
+    }
+    .group-footer {
+        width: 90%;
+        flex-wrap: wrap; 
+        height: 500px; 
+    }
+    .footer{
+        height:550px;
+    }
+    .group-medsos{
+        border:0px solid;
+        width: 100%;
+    }
+
+    /* Portofolio Page*/
+
+    .container_slider{
+        flex-wrap: wrap;
+    }
+
+    .description_content{
+        width: 100%;
+    }
+ }
+ 
+ @media (max-width: 375px) {
+    .opacity{
+        width: 375px;
+    }
+}
